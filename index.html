@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de contacto - Seguro No Pagamos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="" alt="">
+<h1>Seguro No Pagamos Cooperativa</h1>
+    <h3>Solicitud de contacto</h3>
+  </header>
+  <main>
+    <form action="contacto.php" method="POST">
+      <div class="datos-personales">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido">
+        <label for="dni">DNI</label>
+        <input type="number" id="dni" name="dni">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <label for="telefono">Teléfono</label>
+        <input type="number" id="telefono" name="telefono">
+      </div>
+      <div class="tipo-seguro">
+        <label for="tipo-seguro">Tipo de seguro</label>
+        <select id="tipo-seguro" name="tipo-seguro">
+          <option value="basico">Básico</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="premium">Premium</option>
+        </select>
+        <p><b> El valor del seguro selecionado es de:</b></p>
+        <p id="valor-seguro"></p>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <br> <br>
+  <footer>
+    <p>© Seguro No Pagamos Cooperativa 2023</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
